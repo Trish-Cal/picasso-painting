@@ -1,0 +1,98 @@
+h1{
+    font-family: fantasy;
+    font-size:xx-large;
+    color: darkgray;
+}
+body{
+    font-family: fantasy;
+    font-size: medium;
+    color: darkgray;
+}
+.parent{
+    display: grid;
+ 
+    grid-template-rows: 200px 400px 50px;
+    grid-template-columns: repeat(3, 5fr) ;
+}
+
+.parent > *{
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border-color: white;
+}
+
+.box1{
+    background-color: turquoise
+}
+
+.dot1{
+  height: 25px;
+  width: 25px;
+  background-color: pink;
+  border-radius: 50%;
+  display:flex
+}
+
+.dot2{
+    height: 25px;
+  width: 25px;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot3{ 
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  display:grid
+}
+
+.box2{
+    background-color: turquoise
+}
+    .circle{
+        height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-radius: 75%;
+    bottom: -1;
+    }
+.box3{
+    background-color: turquoise
+
+}
+
+main{
+    grid-column: 1/-1;
+    background-color: turquoise
+}
+
+.triangle-up1 {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 300px solid green;
+    position: absolute;
+    bottom: 2;
+}              
+
+
+.triangle-up2 {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid yellow;
+    z-index: 1;
+    position: relative;
+
+ }
+           
+footer{
+    grid-column: 1/-1;
+    background-color: yellow;
+}
